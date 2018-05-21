@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
       title: 'Basic List',
       home: new MyHomePage(),
       routes: <String, WidgetBuilder>{
-        '/settings': (BuildContext context) => new SecondScreen(),
+        '/seconds': (BuildContext context) => new SecondScreen(),
       },
     );
   }
@@ -29,7 +29,7 @@ class MyHomePage extends StatelessWidget {
             new ListTile(
               leading: new Icon(Icons.map),
               title: new Text('Map'),
-                onTap: (){Navigator.of(context).pushNamed("/mytabs");}
+                onTap: (){Navigator.of(context).pushNamed("/seconds");}
             ),
             new ListTile(
               leading: new Icon(Icons.photo_album),
